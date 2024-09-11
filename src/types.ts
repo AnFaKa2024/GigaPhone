@@ -7,3 +7,17 @@ export type RodProps ={
 
 
 }
+
+export type Propaganda = {
+  id: number;
+  imagem: string;
+}
+
+export type Aparelho = {
+  id: number;
+  nome: string;
+  descricao: string;
+  preco: number;
+  imagem: string;
+
+}
