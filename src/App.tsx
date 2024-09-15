@@ -16,6 +16,11 @@ import Cabecalho from './components/Cabecalho'
 import Rodape from './components/Rodape'
  
 function App() {
+  //Antonio Guilherme Araujo Soares
+  //Fernanda Budniak de Seda
+  //Karen Marques dos Santos
+
+  //Link Repositorio Git: https://github.com/AnFaKa2024/GigaPhone
  
   const propagandas: Propaganda[] = [
     { id: 1, imagem: prop },
@@ -31,10 +36,14 @@ function App() {
   ]
 
 
-  const servico = [
-    { nome: 'Manutenção de celulares', descricao: 'Troca de tela, bateria, etc.' },
-    { nome: 'Acessórios', descricao: 'Capas, películas, fones de ouvido' }
-  ]
+  const servicos = {
+    nome1: 'CONSERTO DE TELAS',
+    descricao1: 'Realizamos conserto de telas em nossas lojas, a partir de R$80,00',
+    nome2: 'DESBLOQUEIO DE CELULAR',
+    descricao2: 'Realizamos o desbloqueio de celulares, apenas com a nota fiscal do aparelho, a partir de R$100,00',
+    nome3: 'REPARO DE BATERIA',
+    descricao3: 'Realizamos a troca de baterias com problemas de duração, a partir de R$150,00',
+  };
  
   const rodape: Rods = {
     loja1: 'R. Pedroso de Morais, 1001, Centro, São Paulo',
@@ -53,8 +62,8 @@ function App() {
       <Cabecalho />
       <Propagandas propagandas={propagandas} />
       <Aparelhos aparelhos={aparelhos} />
-      <Servicos servicos={servico} />
-      <Rodape rodape={rodape} />
+      <Servicos {...servicos} />
+      <Rodape {...rodape} />
     </>
   )
 }
