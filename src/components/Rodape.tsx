@@ -1,27 +1,27 @@
+import { FooterRod } from '../styled';
+import { Rods } from '../types';
+ 
 
-import face from './assets/facebook.jpg'
-import insta from './assets/logo insta.jpg'
-import whats from './assets/logo-whatsapp.png'
-
-export default function Rodape(props:RodProps){
-
-return(
-  <FooterRod>
-       <h3> PARA DÚVIDAS ENTRE EM CONTATO </h3>
-      <p> Estamos a disposição pelo Whatsapp <img src={whats} alt="logo-whatsapp" /></p>
-      <p> Siga-nos e acompanhe as novidades e tendências
-        <img src={insta} alt="logo insta" /> 
-        <img src={face} alt="facebook" /> 
-      </p>
-
-      <ul>
-        <li>Loja 1 - {props.loja1}</li>
-        <li>Loja 2 - {props.loja2}</li>
-        <li>Loja 3 - {props.loja3}</li>
-        <li>Loja 4 - {props.loja4}</li>
-      </ul>
-  </FooterRod>
-)
-
-
+ 
+export default function Rodape({ loja1, loja2, loja3, loja4, whats, insta, face }: Rods) {
+  
+  return (
+    <>
+      <FooterRod>
+        <h3>VISITE NOSSAS LOJAS</h3>
+        <p>Endereços</p>
+        <ul>
+          <li>{loja1}</li>
+          <li>{loja2}</li>
+          <li>{loja3}</li>
+          <li>{loja4}</li>
+        </ul>
+        <br />
+        <h3>SIGA-NOS NAS REDES SOCIAIS</h3>
+        <img src={whats} alt="WhatsApp" />
+        <img src={insta} alt="Instagram" />
+        <img src={face} alt="Facebook" />
+      </FooterRod>
+    </>
+  );
 }

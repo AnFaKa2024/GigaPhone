@@ -1,7 +1,8 @@
 import Logo from "../assets/logo.png"
 
 import Login from "../assets/login.png"
-function Cabecalho() {
+
+export default function Cabecalho() {
   return (
     <header>
 
@@ -24,4 +25,3 @@ function Cabecalho() {
   );
 }
 
-export default Cabecalho;

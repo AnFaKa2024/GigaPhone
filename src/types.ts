@@ -1,9 +1,11 @@
-export type RodProps ={ 
-  loja1: 'R. Pedroso de Morais, 1001, Centro, São Paulo';
-  loja2: 'R. Vitalício, 876, Jd. Balmoral, São Paulo';
-  loja3: 'R. Amaranto Marrom, 21, Jd. Nutrição, Ibiúna';
-  loja4: 'R. Água cristalina, 2002, Jd. Fontes, Embú das Artes';
-  
+export type Rods ={ 
+  loja1: string;
+  loja2: string;
+  loja3: string;
+  loja4: string;  
+  whats: string;     
+  insta: string;      
+  face: string;
 
 
 }
@@ -22,14 +24,13 @@ export type Aparelho = {
 
 }
 
-export type Servico = {
+
+export type ServProps = {
   nome: string;
   descricao: string;
   preco: number;
   imagem: string;
-}
-
-export type ServicoProps = {
+ 
   nome1: "CONSERTO DE TELAS"
   descricao1:"Realizamos conserto de telas em nossas lojas, a partir de R$80,00"
 
